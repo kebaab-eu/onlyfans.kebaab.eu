@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media Selector</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    }
+
+    .container {
+      text-align: center;
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #111827;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background: #f9fafb;
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 100px;
+      transition: 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .button:hover {
+      background: #e5e7eb;
+      border-color: #d1d5db;
+      transform: scale(1.05);
+    }
+
+    .button img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 0.5rem;
+    }
+
+    .button span {
+      font-weight: 500;
+      color: #1f2937;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Select a File Type</h1>
+    <div class="buttons">
+      <a class="button" href="https://kebaab.eu/skola/hud/fly-me-to-the-moon/pdf.pdf">
+        <img src="https://img.icons8.com/ios-filled/50/000000/pdf.png" alt="PDF Icon"/>
+        <span>PDF</span>
+      </a>
+      <a class="button" href="https://kebaab.eu/skola/hud/fly-me-to-the-moon/mp3.mp3">
+        <img src="https://img.icons8.com/ios-filled/50/000000/musical-notes.png" alt="MP3 Icon"/>
+        <span>MP3</span>
+      </a>
+      <a class="button" href="https://kebaab.eu/skola/hud/fly-me-to-the-moon/midi.midi">
+        <img src="https://img.icons8.com/ios-filled/50/000000/piano.png" alt="MIDI Icon"/>
+        <span>MIDI</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
