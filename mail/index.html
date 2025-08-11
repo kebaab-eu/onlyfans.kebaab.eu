@@ -56,9 +56,15 @@
 </style>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
+    // Try opening the mail client
     setTimeout(() => {
       window.location.href = "mailto:samuel.capay@outlook.com";
-    }, 2500);
+    }, 1500);
+
+    // After a short delay, try to close the window
+    setTimeout(() => {
+      window.close();
+    }, 3500);
   });
 </script>
 </head>
