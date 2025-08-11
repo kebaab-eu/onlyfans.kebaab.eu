@@ -1,26 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>onlyfans.com</title>
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: sans-serif;
-      text-align: center;
-      padding-top: 50px;
-    }
-  </style>
-  <script>
-    setTimeout(function(){
-      window.location.href = "https://pie.yt/watch?v=dQw4w9WgXcQ";
-    }, 300);
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Exclusive Content | OnlyFans">
+    <meta property="og:description" content="Subscribe to access exclusive content from your favorite creators">
+    <meta property="og:image" content="https://i.ibb.co/6bXJ8t1/onlyfans-preview.jpg">
+    <meta property="og:url" content="https://onlyfans.com/exclusive">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>OnlyFans - Exclusive Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #ff0080, #7928ca);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .logo {
+            width: 180px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #ff0080;
+            text-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .loader-container {
+            position: relative;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 30px 0;
+            overflow: hidden;
+        }
+        
+        .loader {
+            position: absolute;
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #ff0080, #ff8c00);
+            border-radius: 10px;
+            animation: loading 3s infinite;
+        }
+        
+        @keyframes loading {
+            0% { width: 0%; left: 0; }
+            50% { width: 100%; left: 0; }
+            100% { width: 0%; left: 100%; }
+        }
+        
+        .button {
+            background: linear-gradient(90deg, #ff0080, #ff8c00);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 20px 0;
+            font-weight: bold;
+            width: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 0, 128, 0.4);
+        }
+        
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 0, 128, 0.6);
+        }
+        
+        .social-proof {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .user {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+        
+        .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #ff0080;
+            margin-bottom: 10px;
+        }
+        
+        .counter {
+            font-size: 14px;
+            margin-top: 20px;
+            opacity: 0.8;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        
+        @media (max-width: 500px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <p>Loading onlyfans.com...</p>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/OnlyFans_logo.svg" alt="OnlyFans" class="logo">
+        <h1>Exclusive Content Loading</h1>
+        <p>Please wait while we prepare your exclusive content. This may take a few moments...</p>
+        
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
+        
+        <p>Access premium content from your favorite creators</p>
+        
+        <div class="social-proof">
+            <div class="user">
+                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User" class="avatar">
+                <span>@model_amy</span>
+            </div>
+            <div class="user">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" class="avatar">
+                <span>@premium_jess</span>
+            </div>
+            <div class="user">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User" class="avatar">
+                <span>@exclusive_tom</span>
+            </div>
+        </div>
+        
+        <div class="counter">
+            <span id="counter">5,421,098</span> users online now
+        </div>
+        
+        <button class="button" id="previewButton">View Preview Content</button>
+        
+        <div class="footer">
+            © 2023 OnlyFans. All rights reserved. | Privacy Policy | Terms of Service
+        </div>
+    </div>
+
+    <script>
+        // Function to redirect to Rickroll
+        function redirectToRickroll() {
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }
+        
+        // Redirect after 5 seconds
+        setTimeout(redirectToRickroll, 5000);
+        
+        // Also redirect if the user clicks anywhere
+        document.addEventListener('click', redirectToRickroll);
+        
+        // Counter animation
+        const counterElement = document.getElementById('counter');
+        let count = 5421098;
+        
+        setInterval(() => {
+            count += Math.floor(Math.random() * 10) + 1;
+            counterElement.textContent = count.toLocaleString();
+        }, 1500);
+        
+        // Preview button
+        document.getElementById('previewButton').addEventListener('click', function(e) {
+            e.stopPropagation();
+            alert("🔒 Premium content requires subscription\n\nRedirecting to exclusive content...");
+            setTimeout(redirectToRickroll, 2000);
+        });
+    </script>
 </body>
 </html>
