@@ -1,11 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <script type="text/javascript">
-    window.location.href = "https://kebaab.eu/linktree";
-  </script>
+  <meta charset="UTF-8" />
+  <title>Continue to OnlyFans</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="referrer" content="no-referrer" />
+  <style>
+    html, body {
+      margin: 0; padding: 0;
+      height: 100%;
+      background: #121212;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      overflow: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      flex-direction: column;
+    }
+
+    #continue-button {
+      padding: 22px 80px;
+      font-size: 22px;
+      font-weight: 600;
+      background: #0d9af2;
+      border: none;
+      border-radius: 40px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(13, 154, 242, 0.8);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      text-transform: none;
+      letter-spacing: 0.05em;
+      user-select: none;
+    }
+
+    #continue-button:hover {
+      background-color: #087bd1;
+      box-shadow: 0 8px 28px rgba(8, 123, 209, 1);
+    }
+
+    #continue-button:active {
+      transform: scale(0.95);
+      box-shadow: 0 4px 12px rgba(8, 123, 209, 0.7);
+    }
+
+    #troll-text {
+      display: none;
+      font-weight: 600;
+      font-size: 2rem;
+      margin-top: 30px;
+      letter-spacing: 0.05em;
+    }
+
+    #video-iframe {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      display: none;
+      background: black;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
-  <p>If you are not redirected, <a href="https://kebaab.eu/linktree">click here</a>.</p>
+
+  <button id="continue-button" aria-label="Continue to OnlyFans">Continue to OnlyFans</button>
+  <div id="troll-text">Get Trolled Noob</div>
+
+  <iframe id="video-iframe" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+  <script>
+    const continueBtn = document.getElementById('continue-button');
+    const iframe = document.getElementById('video-iframe');
+    const trollText = document.getElementById('troll-text');
+
+    continueBtn.addEventListener('click', () => {
+      // Change page title
+      document.title = "Get Trolled Noob";
+
+      // Show the troll text
+      trollText.style.display = "block";
+
+      // Hide the button
+      continueBtn.style.display = "none";
+
+      // Show and start video
+      iframe.src = "https://streamable.com/e/gb99qu?autoplay=1";
+      iframe.style.display = "block";
+    });
+  </script>
 </body>
 </html>
